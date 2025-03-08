@@ -11,4 +11,4 @@ const generateWeeklyReports = async () => {
 }
 
 //Run every Monday 1AM
-cron.schedule("19 15 * * *", generateWeeklyReports, { timezone: "Asia/Kolkata" })
+cron.schedule("0 1 * * 1", generateWeeklyReports, { timezone: "Asia/Kolkata" })

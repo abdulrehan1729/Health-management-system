@@ -6,6 +6,7 @@ const logger = require("../../utils/logger");
 const sendEmail = require("../../utils/sendEmail");
 const moment = require("moment-timezone");
 const connectDB = require("../../config/db.config");
+const Report = require("../../model/Report");
 
 connectDB();
 
@@ -36,6 +37,13 @@ const worker = createWorker("weeklyReportQueue", async (job) => {
 
                 // Generate CSV
                 const csvUrl = await generateCSV(medications, user.email);
+
+                const newReport = new Report({
+                    userId: user._id,
+                    reportFileUrl: csvUrl
+                })
+                await newReport.save();
+                logger.info(`📊 Report saved to DB for user: ${user.email}`);
 
                 logger.info(`📩 Sending weekly report to ${user.email}`);
 
