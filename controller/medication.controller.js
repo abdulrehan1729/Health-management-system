@@ -49,7 +49,7 @@ const deletMedication = async (req, res, next) => {
     try {
         const { id } = req.params
         await Medication.findByIdAndDelete(id)
-        res.status(204).json({ message: 'Successfully deleted medication' })
+        res.status(200).json({ message: 'Successfully deleted medication' })
 
     } catch (error) {
         logger.error(error)
