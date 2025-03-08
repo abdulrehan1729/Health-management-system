@@ -82,10 +82,5 @@ Ctruth is a Health and Wellness Management System designed to help users manage 
 -   **File Storage**: Cloudinary
 -   **Logging**: Winston
 
-## Contributing
 
-Contributions are welcome! Please create a pull request with detailed explanations of your changes.
 
-## License
-
-This project is licensed under the ISC License.
