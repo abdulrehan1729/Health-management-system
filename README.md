@@ -2,7 +2,7 @@
 
 ## Description
 
-Ctruth is a Health and Wellness Management System designed to help users manage their medications efficiently. It provides functionalities for medication tracking, recurring reminders, report generation, email notifications, and secure authentication.
+Health and Wellness Management System designed to help users manage their medications efficiently. It provides functionalities for medication tracking, recurring reminders, report generation, email notifications, and secure authentication.
 
 ## Features
 
