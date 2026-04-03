@@ -1,4 +1,4 @@
-# Ctruth - Health and Wellness Management System
+# Health and Wellness Management System
 
 ## Description
 
